@@ -36,6 +36,7 @@ gem "koala"
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'omniauth-oauth2', '~> 1.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

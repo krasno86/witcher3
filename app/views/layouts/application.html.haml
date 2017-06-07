@@ -19,10 +19,11 @@
           %ul.nav.navbar-nav
             %li
               = link_to 'Home', root_path
-            %li
               - if user_signed_in?
                 %li
-                  %p Hello, #{current_user.email}
+                  %a Hello, #{current_user.email}
+                %li
+                  = link_to 'profile', destroy_user_session_path
                 %li
                   = link_to 'log_out', destroy_user_session_path, :method => :delete
               - else

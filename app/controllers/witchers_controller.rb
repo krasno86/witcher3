@@ -3,26 +3,12 @@ class WitchersController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @graph = Koala::Facebook::API.new()
-    p @graph
-    # @user = current_user
-    # @user.fb_token =
-    # @graph = Koala::Facebook::API.new('EAAFA5DMpdnQBAOA5tKh12UKLz5nOFEgseoamj1h8AVf8wfOXeMZCDLRSc2zd1fGhFgQhgWRNxKjAEcAtJstRMyZBxM4Pv0Ycur5IkTUcIZCvTCrbNiZAyZAswtRZB4TTBmIDOfiUlYrmtZAVp1Mp4C2o74kamE0MiIvyW1Fo6YRYyZA21GjY4Mo1hwWLJrPPTp8ZD')
-
-    # @oauth = Koala::Facebook::OAuth.new('352823831787124', '2a5e37ca5eb45c8db9aa4afbd80bee8f', 'http://localhost:3000/')
-    # @oauth.get_app_access_token
-    # p @oauth
-    # p('===========================')
-
-
-
-
-
   end
 
   # GET /witchers/1
   # GET /witchers/1.json
   def show
+    @user = current_user
   end
 
   # GET /witchers/new

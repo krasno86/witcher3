@@ -147,14 +147,12 @@
     <orderEntry type="library" scope="PROVIDED" name="dotenv-rails (v2.2.1, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="faraday (v0.12.1, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.18, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.0, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml (v5.0.1, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml-rails (v1.0.0, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashie (v3.5.5, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="html2haml (v2.2.0, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="httpauth (v0.2.1, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.8.4, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.6.4, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.3.1, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
@@ -166,13 +164,10 @@
     <orderEntry type="library" scope="PROVIDED" name="method_source (v0.8.2, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.1, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2016.0521, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.1.0, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.10.2, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.12.1, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multipart-post (v2.0.0, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.1.0, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.7.2, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="oauth2 (v0.6.1, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth (v1.6.1, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-facebook (v1.4.0, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.0.2, RVM: ruby-2.4.1 [witcher3]) [gem]" level="application" />

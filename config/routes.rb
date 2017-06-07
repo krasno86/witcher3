@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   get 'witchers/index', to: 'witchers#index'
   root 'witchers#index'
-
+  get 'witchers/show', as: 'profile'
 end
