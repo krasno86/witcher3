@@ -12,6 +12,9 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+.ruby-gemset
+.ruby-version
+.env
+/.idea/*
 # Ignore Byebug command history file.
 .byebug_history

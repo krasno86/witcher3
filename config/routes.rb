@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  # resources :witchers, only: [:show, :edit, :update, :destroy]
-  # resource :witcher
+  devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
+
   get 'witchers/index', to: 'witchers#index'
   root 'witchers#index'
 

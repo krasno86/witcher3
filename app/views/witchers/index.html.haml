@@ -1,7 +1,11 @@
 =image_tag("2.jpg", size: "600x400")
 %p
   Lorem ipsum dolor sit amet...
-%p
-  %span.fb-like{"data-action" => "like", "data-href" => "https://developers.facebook.com/docs/plugins/", "data-layout" => "button_count", "data-share" => "true", "data-show-faces" => "true", "data-size" => "large"}
-.fb-comments{"data-href" => "https://developers.facebook.com/docs/plugins/comments#configurator", "data-numposts" => "5"}
-
+%br
+-#= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path
+%br
+.fb-like{"data-action" => "like", "data-href" => "http://localhost:3000/index/", "data-layout" => "standard", "data-share" => "true", "data-show-faces" => "true", "data-size" => "large"}
+%br
+.fb-comments{"data-href" => "http://localhost:3000/index", "data-numposts" => "5"}
+%br
+.fb-login-button{"data-auto-logout-link" => "true", "data-button-type" => "continue_with", "data-max-rows" => "1", "data-show-faces" => "false", "data-size" => "large", "data-use-continue-as" => "true"}
