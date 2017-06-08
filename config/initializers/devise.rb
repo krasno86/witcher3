@@ -14,7 +14,7 @@ Devise.setup do |config|
   # with default "from" parameter.
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
   config.omniauth :facebook, ENV['FB_APP_ID'], ENV['FB_CONFIG_APP_SECRET'],
-                  callback_url: "http://localhost:3000/users/auth/facebook/callback",
+                  callback_url: "https://powerful-depths-72874.herokuapp.com/users/auth/facebook/callback",
                   scope: 'email,user_birthday,user_friends,public_profile,user_photos,publish_actions,user_likes,user_posts,user_about_me, user_location, user_website, user_hometown'
   # config.mailer = 'Devise::Mailer'
 
