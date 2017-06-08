@@ -1,0 +1,8 @@
+%p#notice= notice
+%h2 You name: #{@user.name}
+- if @user.avatar.present?
+  = image_tag @user.avatar, size: '200x200'
+%br
+= link_to 'Friends', user_friends_path
+\|
+= link_to 'Back', root_path
