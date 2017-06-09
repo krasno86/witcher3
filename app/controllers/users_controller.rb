@@ -1,17 +1,21 @@
 class UsersController < ApplicationController
   # before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-  # GET /users
-  # GET /users.json
+
   def friends
-    @graph = Koala::Facebook::API.new(current_user.fb_token)
-    p me = @graph.get_object("me")
-    p'+++++++++++++++++++++++++'
-    p friends = @graph.get_object("me/friends")
+    graph = Koala::Facebook::API.new(current_user.fb_token)
+    @friends = graph.get_connections(
+        "me", "friends", {
+        fields: %w(id name picture{url} hometown)
+    }
+    )
   end
 
   def show
     @user = current_user
+    @graph = Koala::Facebook::API.new(current_user.fb_token)
+    @birthday = @graph.get_object("me?fields=birthday")['birthday']
+    p @feed = @graph.get_connection('me', 'feed')
   end
 
   # GET /users/new
@@ -64,13 +68,13 @@ class UsersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    # def set_user
-    #   @user = User.find(params[:id])
-    # end
+  # Use callbacks to share common setup or constraints between actions.
+  # def set_user
+  #   @user = User.find(params[:id])
+  # end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.fetch(:user, {})
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def user_params
+    params.fetch(:user, {})
+  end
 end

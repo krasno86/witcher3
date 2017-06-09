@@ -1,17 +1,11 @@
-%h1 Listing users
+%h1 Friends:
 
-%table
-  %thead
-    %tr
-      %th
-      %th
-      %th
-p #{}
-  %tbody
-    -#- @users.each do |user|
-    -#  %tr
-    -#    %td= link_to 'Show', user
-    -#    %td= link_to 'Edit', edit_user_path(user)
-    -#    %td= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }
-
-
+%ul
+  - @friends.each do |user|
+    %li
+      = image_tag user.dig('picture', 'data', 'url')
+      = link_to 'Send Message', '#', class: 'btn btn-primary', data: {fuid: user['id']}
+      %h3
+        = user['name']
+      %span.small
+        = user.dig('hometown', 'name')
